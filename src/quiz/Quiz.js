@@ -10,7 +10,7 @@ let store = createStore(quizReducer,
 )
 store.subscribe(() => console.log(store.getState()));
 
-class QuizApp extends Component {
+class Quiz extends Component {
     constructor(props) {
       super(props);
       const store = this.props;
@@ -36,12 +36,12 @@ class QuizApp extends Component {
     }
 }
 
-function renderApp() {
+function renderQuiz() {
   ReactDOM.render(
-    <QuizApp { ... store }/>,
+    <Quiz { ... store }/>,
     document.getElementById('root')
   );
 }
 
-store.subscribe(renderApp);
-export default renderApp;
+store.subscribe(renderQuiz);
+export default renderQuiz;
