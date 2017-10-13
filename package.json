@@ -13,30 +13,46 @@
     "sauce": "./node_modules/.bin/nightwatch -e chrome,ie11,android_s4_emulator,iphone_6_simulator",
     "upload": "node test/e2e/upload_screenshots_to_s3.js",
     "e2e": "npm run sauce; npm run upload",
-    "dev": "./node_modules/.bin/nodemon -w test/index.html --delay 250ms --exec 'npm run upload'"
+    "dev": "./node_modules/.bin/nodemon -w test/index.html --delay 250ms --exec 'npm run upload'",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "react_test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dwyl/learn-nightwatch.git"
+    "url": "git+https://github.com/<addurlhere>.git"
   },
-  "author": "DWYL & Friends",
-  "license": "GPL-2.0",
+  "author": "gimi & ellie",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dwyl/learn-nightwatch/issues"
   },
   "homepage": "https://github.com/dwyl/learn-nightwatch#readme",
   "dependencies": {
+    "axios": "^0.16.2",
+    "express": "^4.16.2",
     "nightwatch": "^0.9.9",
+    "path": "^0.12.7",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "react-scripts": "1.0.14",
+    "react-test-renderer": "^16.0.0",
+    "redux": "^3.7.2",
     "saucelabs": "^1.3.0",
     "selenium-download": "^2.0.7"
   },
   "devDependencies": {
     "aws-sdk": "^2.7.13",
     "env2": "^2.1.1",
+    "eslint": "^4.8.0",
     "mime-types": "^2.1.13",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "redux-devtools": "^3.4.0"
   },
   "keywords": [
+    "quiz",
     "nightwatch",
     "testing",
     "front-end",
@@ -44,8 +60,6 @@
     "browser",
     "test",
     "testing",
-    "step-by-step tutorial",
-    "how to",
     "User Acceptance Testing",
     "UAT"
   ]
