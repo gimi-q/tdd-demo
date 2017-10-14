@@ -22,17 +22,17 @@ class Quiz extends Component {
     }
 
     render() {
-        const state = this.props.getState();
-        return (
-          <div id="main">
-            <h1 id="welcome-message">Welcome to the Quiz!</h1>
-            <div id="question">?</div>
-            <div id="answers">
-              <div className="answer">!</div>
-              <div className="answer">!</div>
-            </div>
+      const state = this.props.getState();
+      return (
+        <div id="main">
+          <h1 id="welcome-message">Welcome to the Quiz!</h1>
+          <div id="question">?</div>
+          <div id="answers">
+            <div className="answer">!</div>
+            <div className="answer">!</div>
           </div>
-        );
+        </div>
+      );
     }
 }
 

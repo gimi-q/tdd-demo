@@ -1,7 +1,7 @@
 {
-  "name": "learn-nightwatch",
+  "name": "quiz-tdd",
   "version": "1.0.24",
-  "description": "Learn how to use nightwatch for front-end testing. step-by-step tutorial",
+  "description": "",
   "main": "index.js",
   "engines": {
     "node": "4.4.6"
@@ -26,9 +26,9 @@
   "author": "gimi & ellie",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dwyl/learn-nightwatch/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/dwyl/learn-nightwatch#readme",
+  "homepage": "",
   "dependencies": {
     "axios": "^0.16.2",
     "express": "^4.16.2",
@@ -46,7 +46,14 @@
   "devDependencies": {
     "aws-sdk": "^2.7.13",
     "env2": "^2.1.1",
-    "eslint": "^4.8.0",
+    "eslint": "^4.7.2",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "^21.1.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.4.0",
+    "gulp-eslint": "^4.0.0",
     "mime-types": "^2.1.13",
     "nodemon": "^1.11.0",
     "redux-devtools": "^3.4.0"
