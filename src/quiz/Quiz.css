@@ -1,28 +1,77 @@
-.App {
+body {
+  background-color: #FDFDFD;
+}
+
+select {
+  padding: 3px;
+  background-color: #FDFDFD;
+  border-radius: 2px !important;
+  transition: all 1s;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-appearance:none;
+  text-align-last:center;
+  border-color: #3A3935;
+  border-style: solid;
+  border-width: 2px;
+}
+
+select:focus {
+  outline: 0;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+select:focus {outline:0;}
+
+#main {
   text-align: center;
+  width: 80%;
+  margin:0 auto;
+  color: #3A3935;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+#question {
+  font-size: 18px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+#answers {
+  width: 90%;
+  margin:0 auto;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-title {
-  font-size: 1.5em;
+.answerWrapper {
+  width: 100%;
+  margin:0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
 }
 
-.App-intro {
-  font-size: large;
+button {
+  background-color: #FDFDFD;
+  border-color: #3A3935;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 3px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+button:hover {
+  border-color: #FDB645;
 }
+
+button:focus {outline:0;}
