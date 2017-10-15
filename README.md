@@ -1,10 +1,13 @@
-#Setup
-git clone
-npm install
-npm run react_test
-npm start
+##Setup
+git clone,
 
-#User-stories
+npm install,
+
+npm run react_test,
+
+npm start,
+
+##User-stories
 
 1.
 
