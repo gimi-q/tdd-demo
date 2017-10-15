@@ -7,7 +7,7 @@ function optionList(options) {
   return options.map(option => Option(option));
 }
 
-export default function DifficultySelect(difficulty, store) {
+export default function DifficultySelector(difficulty, store) {
   const onChange = (e) => {
     store.dispatch({ type: 'SET_DIFFICULTY', difficulty: e.target.value.toLowerCase() });
     getQuestions(1, store);
