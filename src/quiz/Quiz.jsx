@@ -4,8 +4,8 @@ import { createStore } from 'redux';
 import './Quiz.css';
 import { getQuestions, decodeHtml, shuffle } from '../helpers/helpers';
 import quizReducerFactory from './quiz.reducer';
-import answersList from './components/Answers';
-import DifficultySelect from './components/Difficulty';
+import Answers from './components/Answers';
+import DifficultySelector from './components/DifficultySelector';
 
 const quizReducer = quizReducerFactory(shuffle);
 
@@ -32,12 +32,12 @@ class Quiz extends Component {
     return (
       <div id="main">
         <h1 id="welcome-message">Welcome to the Quiz!</h1>
-        {DifficultySelect(data.difficulty, store)}
+        {DifficultySelector(data.difficulty, store)}
         <div>Score: {data.score}</div>
         { dataLoaded &&
         <div>
           <div id="question">{decodeHtml(data.question)}</div>
-          {answersList(data.possibleAnswers, store)}
+          {Answers(data.possibleAnswers, store)}
         </div>
         }
       </div>
