@@ -1,6 +1,10 @@
-#learn-nightwatch
+#Setup
+git clone
+npm install
+npm run react_test
+npm start
 
-#user-stories
+#User-stories
 
 1.
 
@@ -35,6 +39,7 @@ I am able to select a category of question to answer.
 
 4.
 
+TO DO:
 As a quizapp administrator
 I want to be able to use questions from a variety of open-source trivia services
 So that I don’t have to write all the questions myself
@@ -85,4 +90,4 @@ AC:
 I can view the following stats for every question:
 
 How many times it has been answered correctly
-How many times it has been answered incorr
+How many times it has been answered incorrectly
