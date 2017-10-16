@@ -27,6 +27,8 @@ class Quiz extends Component {
       possibleAnswers: dataLoaded ? state.questions[0].possibleAnswers : [''],
       score: state.score,
       difficulty: state.difficulty,
+      answered: state.questionAnswered,
+      answeredCorrectly: state.answeredCorrectly ? 'yes' : 'no',
     };
 
     return (
@@ -36,7 +38,11 @@ class Quiz extends Component {
         <div>Score: {data.score}</div>
         { dataLoaded &&
         <div>
-          <div id="question">{decodeHtml(data.question)}</div>
+          <div
+            id="question"
+            question-answered={data.answered}
+            answered-correctly={data.answeredCorrectly}
+          >{decodeHtml(data.question)}</div>
           {Answers(data.possibleAnswers, store)}
         </div>
         }

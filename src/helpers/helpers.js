@@ -9,9 +9,11 @@ export function getQuestions(amount, store) {
     .then((response) => {
       const questions = response.data.results;
       store.dispatch({ type: 'LOAD_QUESTIONS', questions });
+      return response.data.results;
     })
     .catch((error) => {
       console.warn('response from axios', error);
+      return error;
     });
 }
 
